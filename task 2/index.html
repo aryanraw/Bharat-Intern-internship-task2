@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Search for cities">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="current-weather-section">
+            <h2 id="city-name">City</h2>
+            <div id="current-weather">
+                <div class="temperature">
+                    <div id="current-icon"></div>
+                    <div class="current-desciption">
+                        <p id="current-desciption">--</p>
+                    </div>
+                    <span id="current-temp">--</span>
+                </div>
+
+                <div class="details">
+                    <div class="div-feels-like">
+                        <img id="details-icons" width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/thermometer.png" alt="thermometer"/>
+                        Feels like: 
+                        <span id="feels-like">--</span>
+                    </div>
+                    <div class="div-wind-speed">
+                        <img id="details-icons" width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/wind.png" alt="wind"/>
+                        Wind: <span id="wind-speed">--</span> 
+                    </div>
+                    <div class="div-uv-index">
+                        <img id="details-icons" width="50" height="50" src="https://img.icons8.com/ios-glyphs/60/FFFFFF/visible--v1.png" alt="visible--v1"/>
+                        UV Index: <span id="uv-index">--</span>
+                    </div>
+                    <div class="div-humidity">
+                        <img id="details-icons" width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/drop-of-blood.png" alt="drop-of-blood"/>
+                        Humidity: <span id="humidity">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="hourly-weather-section">
+                <h3 class="sub_heading">Hourly forecast</h3>
+                <div id="hourly-forecast" class="forecast">
+                </div>
+            </div>
+            <div class="daily-weather-section">
+                <h3 class="sub-heading">Daily forecast</h3>
+                <div class="weekly-section" id="weekly-forecast">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/test.js"></script>
+</body>
+</html>
